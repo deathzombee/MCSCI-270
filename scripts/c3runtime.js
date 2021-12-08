@@ -3949,11 +3949,11 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => and("Hits", v0.GetValue());
+			return () => and("Hits:", v0.GetValue());
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => and("Health", n0.ExpInstVar());
+			return () => and("Health:", n0.ExpInstVar());
 		},
 		() => "Main",
 		() => 1,
